@@ -78,7 +78,33 @@ public class Main {
                 default:
                     System.out.println("Такого месяца не существует");
 
+
             }
+        System.out.println("Задание 6..");
+
+            int age = 19;
+            int salary = 58_000;
+            if (age < 23) {
+                if (salary < 50_000) {
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary *2) + " рублей");
+                } else if (salary >= 50000 && salary < 80_000) {
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 2 *1.2) + " рублей");
+                } else {
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 2 *1.5) + " рублей");
+                }
+            } else {
+                if (salary < 50_000) {
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary *3) + " рублей");
+                } else if (salary >= 50000 && salary < 80_000) {
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 3 *1.2) + " рублей");
+                } else {
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + (salary * 3 *1.5) + " рублей");
+                }
+            }
+
+        System.out.println("Задание 7..");
+
+
 
 
     }
