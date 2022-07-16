@@ -104,7 +104,72 @@ public class Main {
 
         System.out.println("Задание 7..");
 
+            int age1 = 45;
+            int salary1 = 80_000;
+            int wantedSum = 330_000;
+            double baseBet;                             // базовая ставка
+            double maxPayment = salary1 / 2;
+            double payment;
+            if (salary1 > 80_000) {
+                baseBet = 10 - 0.7;                    //Если зарплата больше 80000, базовая ставка -0,7
+                if ( age1 < 23){
+                    baseBet = baseBet + 1;
+                    payment = (wantedSum + (wantedSum * baseBet / 100)) / 12;
+                    System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей. Платеж по кредиту " + payment + " рублей.");
+                    if (maxPayment > payment) {
+                        System.out.println("Одобрено");
+                    } else {
+                        System.out.println("Отказано");
+                    }
+                } else if (age1 >= 23 && age1 < 30) {
+                    baseBet = baseBet + 0.5;
+                    payment = (wantedSum + (wantedSum * baseBet / 100)) / 12;
+                    System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей. Платеж по кредиту " + payment + " рублей.");
+                    if (maxPayment > payment) {
+                        System.out.println("Одобрено");
+                    } else {
+                        System.out.println("Отказано");
+                    }
+                }else {
+                    payment = (wantedSum + (wantedSum * baseBet / 100)) / 12;
+                    System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей. Платеж по кредиту " + payment + " рублей.");
+                    if (maxPayment > payment) {
+                        System.out.println("Одобрено");
+                    } else {
+                        System.out.println("Отказано");
+                    }
+                }
+            } else  {
+                baseBet = 10;
+                if ( age1 < 23){
+                    baseBet = baseBet + 1;
+                    payment = (wantedSum + (wantedSum * baseBet / 100)) / 12;
+                    System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей. Платеж по кредиту " + payment + " рублей.");
+                    if (maxPayment > payment) {
+                        System.out.println("Одобрено");
+                    } else {
+                        System.out.println("Отказано");
+                    }
+                } else if (age1 >= 23 && age1 < 30) {
+                    baseBet = baseBet + 0.5;
+                    payment = (wantedSum + (wantedSum * baseBet / 100)) / 12;
+                    System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей. Платеж по кредиту " + payment + " рублей.");
+                    if (maxPayment > payment) {
+                        System.out.println("Одобрено");
+                    } else {
+                        System.out.println("Отказано");
+                    }
+                }else {
+                    payment = (wantedSum + (wantedSum * baseBet / 100)) / 12;
+                    System.out.println("Максимальный платеж при ЗП " + salary1 + " равен " + maxPayment + " рублей. Платеж по кредиту " + payment + " рублей.");
+                    if (maxPayment > payment) {
+                        System.out.println("Одобрено");
+                    } else {
+                        System.out.println("Отказано");
+                    }
+                }
 
+            }
 
 
     }
