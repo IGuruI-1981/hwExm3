@@ -104,8 +104,8 @@ public class Main {
 
         System.out.println("Задание 7..");
 
-            int age1 = 45;
-            int salary1 = 80_000;
+            int age1 = 25;
+            int salary1 = 60_000;
             int wantedSum = 330_000;
             double baseBet;                             // базовая ставка
             double maxPayment = salary1 / 2;
